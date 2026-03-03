@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Web Development</h1>
+
+        <img src="images.jpg" alt="Placeholder Image" height="400" width="200">
+
+        <h2>About Me</h2>
+
+        <p>Hii, I am <strong> Ravindra Rajak</strong> doing my first internship as Web Developer in HTML, CSS, and JavaScript From <strong>ApexPlanet Software Pvt. ltd.</strong></p>
+
+        <p>Visit <a href="https://www.linkedin.com/in/ravindrarajak/" target="_blank">LinkedIn</a>And <a href="https://github.com/ravind00" target="_blank">GitHub</a> for more info about me.</p>
+
+        <button id="alertBtn">Click Here</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <style>
+        /* Apply styles to the whole body */
+body {
+    font-family: Arial, sans-serif; /* Change Font */
+    background-color: #f4f4f9;      /* Light grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;        /* Horizontally center the container */
+}
+
+/* Style the main container div */
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;            /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;             /* Center text inside the box */
+}
+
+/* Style the headings */
+h1 {
+    color: #406385; /* Dark Blue */
+}
+
+h2 {
+    color: #e67e22; /* Orange */
+}
+
+/* Style the image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Style the button */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+    </style>
+
+    <script>
+        // Select the button using its ID
+const button = document.getElementById('alertBtn');
+
+// Define the function that runs when clicked
+function showMessage() {
+    alert("Thank You For visiting My First Project.");
+}
+
+// Add an event listener to the button
+// When 'click' happens, run 'showMessage'
+button.addEventListener('click', showMessage);
+    </script>
+</body>
+</html>
